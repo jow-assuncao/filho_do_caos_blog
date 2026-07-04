@@ -9,6 +9,9 @@ const montSerrat = Montserrat({
 export const metadata: Metadata = {
   title: "filho do caos",
   description: "reflexões e pensamentos moralmente questionáveis",
+  icons: {
+    icon: './favicon.png'
+  }
 };
 
 export default function RootLayout({
