@@ -1,4 +1,4 @@
-export default function OUniversoTendeAoCaos() {
+export default function QuandoVocePercebe() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center">
       <main className="flex flex-1 w-full max-w-3xl flex-col bg-white py-32 px-16 items-start p-6">
