@@ -21,17 +21,17 @@ export default function Home() {
       <main className="flex w-full max-w-3xl flex-col items-center bg-white py-32 px-16 sm:items-start p-6">
         <div className="md:mt-40 flex gap-4 flex-col w-full items-center md:items-start">
           <Image loading="eager" src={Rust} alt="Rust Cohle sentado no chão fumando um cigarro" className="rounded-full w-50" />
-          <h1 className="text-black font-bold text-xl">é só um canto na internet</h1>
+          <h1 className="text-black font-bold text-xl">só um canto na internet</h1>
         </div>
 
-          <div className="mt-10 flex flex-col gap-10 md:gap-5 w-full">
-            {articlesData.map(article => (
-              <Link key={article.slug} href={article.href} className="flex flex-col md:flex-row md:justify-between">
-                <span>{article.slug}</span>
-                <span className="text-xs md:text-sm text-[#b5b8bb]">{article.date}</span>
-              </Link>
-            ))}
-          </div>
+        <div className="mt-10 flex flex-col gap-10 md:gap-5 w-full">
+          {articlesData.map(article => (
+            <Link key={article.slug} href={article.href} className="flex flex-col md:flex-row md:justify-between">
+              <span>{article.slug}</span>
+              <span className="text-xs md:text-sm text-[#b5b8bb]">{article.date}</span>
+            </Link>
+          ))}
+        </div>
       </main>
     </div>
   );
